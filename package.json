@@ -1,0 +1,22 @@
+{
+  "name": "start_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaPedash/marcho.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaPedash/marcho/issues"
+  },
+  "homepage": "https://github.com/AlinaPedash/marcho#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
