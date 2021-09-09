@@ -1,4 +1,48 @@
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
 
-body{
+main{
+  flex-grow: 1;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+.button{
+  padding: 15px 30px;
+  background: linear-gradient(180deg, #F6762C 0%, #C65311 100%);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.subtitle{
+  color: #F6762C;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
+.title-2 {
+  font-weight: 700;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-size: 39px;
+  line-height: 56,55px;
+}
+.title-3 {
+  font-weight: 500;
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 37px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #190C05; 
 }

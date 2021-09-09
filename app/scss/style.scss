@@ -5,4 +5,171 @@
 @import 'global';
 
 
+.header{
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  &__logo{
+    padding-top: 20px;
+  }
+}
+.menu{
+ &__inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+ }
+ &__list{
+   display: flex;
+   justify-content: space-between;
+ }
+ &__item{
+   padding-top: 50px;
+ }
+ &__item + .menu__item{
+
+ }
+ &__link{
+  color: #190C05;
+  padding: 15px 30px;
+   &:hover{
+   background: linear-gradient(180deg, #F6762C 0%, #C65311 100%);
+   padding: 15px 30px;
+   border-radius: 10px;
+  }
+ }
+ &__link--cub::before{
+   content: url('../images/hober.png');
+   height: 30px;
+   width: 30px;
+   left: 0;
+   top: 0;
+   padding-right: 10px;
+ }
+ &__link--log{
+   font-weight: 700;
+ }
+}
+
+.content{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    max-width: 480px;
+    margin-top: 150px;
+  }
+  &__subtitle{
+    color: #F6762C;
+    font-weight: 500;
+    text-transform: uppercase;
+    &::after{
+      content: '_';
+      width: 45px;
+      height: 1px;
+      color: #F6762C; 
+    }
+  }
+  &__title{
+    font-weight: 700;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 49px;
+    line-height: 63,7px;
+  }
+  &__text{
+    margin-bottom: 45px;
+  }
+}
+
+.about{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images{
+    margin-top: 100px;
+  }
+  &__content{
+    margin-top: 200px;
+    margin-left: 80px;
+  }
+  &__text{
+    margin-bottom: 45px;
+  }
+  &__link{
+    padding: 15px 30px;
+    background: linear-gradient(180deg, #190C05 0%, rgba(25, 12, 5, 0.79) 100%);
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .features{
+    &__title-one{
+      text-align: center;
+      margin-top: 100px;
+    }
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 165px;
+    }
+    &__item{
+      max-width: 330px;
+      text-align: center;
+    }
+    &__item + .features__item{
+      padding-left: 30px;
+    }
+    &__item--box::before{
+     content: url('../images/box.png');
+     width: 65px;
+     height: 60px; 
+    }
+    .features__item--delivery::before{
+     content: url('../images/delivery.png');
+     top: 0;
+     left: 0;
+     width: 80px;
+     height: 80px; 
+    }
+    &__item--visa::before{
+     content: url('../images/visa.png');
+     width: 80px;
+     height: 80px; 
+    }
+  }
+  .download{
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__title{
+      text-transform: none;
+    }
+    &__wrapper{
+      max-width: 460px;
+      margin-top: 290px;
+    }
+    &__playmarket{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+    &__link + .download__link{
+    padding-left: 25px;
+    }
+    &__photo{
+    }
+    &__phone{
+      margin-top: 120px;
+      
+    }
+  }
+}
 @import 'media';
