@@ -107,6 +107,11 @@
     color: #FFF;
     font-size: 16px;
     line-height: 24px;
+    &:hover{
+      background: #fff;
+      color: black;
+      border: 1px solid black;
+    }
   }
   .features{
     &__title-one{
@@ -117,7 +122,7 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-top: 165px;
+      margin-top: 120px;
     }
     &__item{
       max-width: 330px;
@@ -171,5 +176,160 @@
       
     }
   }
+}
+.recipes{
+  &__block{
+    margin-top: 110px;
+    text-align: center;
+  }
+  &__food{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  &__item{
+    position: relative;
+    max-width: 360px;
+    max-height: 1000px;
+    text-align: center;
+    border: 1px solid #F6762C;
+    border-radius: 20px;
+    padding: 55px 30px 70px;
+    z-index: 2;
+  }
+  &__item::after{
+    position: absolute;
+    content: url('../images/span.png');
+    top: 40px;
+    right: 100px;
+    z-index: -2;
+  }
+  &__item-1::before{
+    position: absolute;
+    top: -90px;
+    left: 90px;
+    content: url('../images/1.png');
+    z-index: -3;
+  }
+  &__item-2::before{
+    position: absolute;
+    top: -90px;
+    left: 90px;
+    content: url('../images/2.png');
+    z-index: -3;
+  }
+  &__item-3::before{
+    position: absolute;
+    top: -90px;
+    left: 90px;
+    content: url('../images/3.png');
+    z-index: -3;
+  }
+  &__item + .recipes__item{
+    padding-left: 30px;
+  }
+  &__button{
+    position: absolute;
+    left: 120px;
+    top: 305px;
+  }
+  &__wrapper{
+    display: block;
+  }
+  &__price{
+    color: #fff;
+    padding-left: 100px;
+  }
+}
+.footer{
+  background-color: #FFE6D9;
+  margin-top: 110px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin-bottom: 70px;
+  }
+  &__item{
+    max-width: 235px;
+  }
+  &__social{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+  }
+  &__link + .footer__link{
+    padding-left: 15px;
+  }
+  &__menu{
+    max-width: 120px;
+  }
+  &__list{
+    padding-top: 30px;
+  }
+  &__list-link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #190C05;
+  }
+  &__useful{
+    max-width: 200px;
+  }
+  &__useful-list{
+    padding-top: 30px;
+  }
+  &__connect{
+    max-width: 260px;
+  }
+  &__form{
+    margin-top: 30px;
+    position: relative;
+  }
+  &__input{
+    max-width: 260px;
+    max-height: 50px;
+    background: #fff;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 13px 55px 13px 13px;
+    
+  }
+  &__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F6762C;
+    border: none;
+    right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  &__btn::before{
+    content: url('../images/btn.png');
+  }
+  &__call{
+    margin-top: 20px;
+  }
+  &__call::before{
+    content: url('../images/phone.png');
+    margin-right: 10px;
+  }
+  &__contact{
+    margin-top: 15px;
+  }
+  &__contact::before{
+    content: url('../images/mail.png');
+    margin-right: 10px;
+  }
+}
+.line{
+  border-top: 1px solid rgb(151, 144, 144);
+  max-width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 35px 0;
 }
 @import 'media';

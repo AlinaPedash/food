@@ -20,6 +20,11 @@ main{
   cursor: pointer;
   border: none;
 }
+.button:hover{
+  background: #fff;
+  color: #F6762C;
+  border: 1px solid #F6762C;
+}
 .subtitle{
   color: #F6762C;
   font-weight: 500;
